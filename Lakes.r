@@ -1,5 +1,5 @@
-setwd('/Users/santi/Library/Mobile Documents/com~apple~CloudDocs/uOttawa/BIO 4556 - Écologie des eaux douces/Final Project')
-library(effsize)
+setwd() #Specify Working Directory
+library(effsize) # Effsize library
 ###
 #Geai Data
 geai <- read.csv('Geai.csv', header = TRUE)
@@ -154,7 +154,7 @@ bos.t <- t.test(croche.2$bosmina.2, y = geai.2$bosmina.2,
         alternative = "l", paired = FALSE, var.equal = FALSE)
 
 ###
-
+# Chaoborus Data - Ignore calls as Chironamids
 choronamids <- unlist(geai[c('choronamid.1', 'choronamid.2')], use.names = FALSE)
 choronamids <- choronamids[!is.na(choronamids)]
 boxplot(choronamids, main = 'Chaoborus Size Distribution', xlab = 'Size (μm)', horizontal = TRUE, col = '#fff2009d')
