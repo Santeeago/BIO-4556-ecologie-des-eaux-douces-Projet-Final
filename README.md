@@ -5,4 +5,4 @@ Lakes.r contient le code utilisé pour traiter les données recueillies pendant 
 
 L'outil nécessite les deux fichiers .csv avec les données.
 
-Je m'excuse davantage pour la manque d'efficacité dans la programmation.
+Je m'excuse d'avance pour la manque d'efficacité dans la programmation.
